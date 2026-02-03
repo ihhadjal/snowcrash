@@ -1,0 +1,5 @@
+etape 1 : on dispose d'un binaire nomme level08 que lon a decompiler avec https://dogbolt.org et un fichier token permission denied
+
+etape 2 : dans le main du binaire decompiler , le programme attend un parametre si ce parametre contient token le programme retourne une erreur sinon il write le contenu
+
+etape 3 : faire un lien symbolyque avec token sur un autre fichier et relancer l'executable avec le nouveau fichier on obtient quif5eloekouj29ke0vouxean

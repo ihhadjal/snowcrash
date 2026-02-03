@@ -1,0 +1,9 @@
+Étape 1 : Regarder la vidéo sur l’intra afin d’obtenir un indice sur la commande à utiliser (find) et l’outil à utiliser (john).
+
+Étape 2 : Rechercher john dans les exécutables (/sbin).
+
+Étape 3 : Trouver john et afficher ce qu’il contient (le mot de passe).
+
+Étape 4 : Décrypter le mot de passe trouvé à l’aide de decode.fr avec le code César.
+
+Étape 5 : Utiliser le mot de passe du site : nottoohardhere.

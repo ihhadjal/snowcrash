@@ -1,0 +1,9 @@
+etape 1: ls pour avoir acces aux fichers
+
+etape 2: voir les users sur le systeme et voir si on peut avoir des mdp (cat etc/passwd)
+
+etape 3: on remarque que sur le flag01 il y a une chaine de caracteres alors que on est cense avoir un x (flag01:42hDRfypTqqnw)
+
+etape 4: on a passe la chaine a John (echo flag01:42hDRfypTqqnw > text.txt et ensuite john --show text.txt) pour decoder la chaine de caracteres ce qui nous a donne le mdp: abcdefg
+
+etape 5: resoudre l'exo

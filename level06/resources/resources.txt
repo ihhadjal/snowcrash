@@ -1,0 +1,8 @@
+etape 1: on dispose de deux fichiers, un binaire nommee level06 que on a decompile grace a https://dogbolt.org 
+et un fichier php level06.php qui contient deux fonctions  x et y, la fonction y remplace les . par des x et les @ par y et la fonction x prends 2 argments le premier sert a lire le contenu du fichier 
+stocke dans la variable a, dans la variable a on fait un enchainement de preg_replace, la faille se trouve dans l;un des preg_replace (le 1er) car on utilise la fonction eval (execute une chaine de characteres)
+
+etape 2: vu que level06 attends un fichier a lire grace aux fonctions x et y nous avons cree le fichier grace a la commande suivante: echo '[x {${system(getflag)}}]' > /tmp/attaque.txt
+
+etape 3: nous avons lance le script pour executer getflag grace a eval, grace a ca on a pu recuperer le flag
+

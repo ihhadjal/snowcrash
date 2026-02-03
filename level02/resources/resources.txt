@@ -1,0 +1,47 @@
+etape 1: on a remarque que il yavait un fichier pcap pour lire son flux il nous faut Wireshark donc on pense a user la commande scp pour le transferer dans la machine host
+
+etape 2: on a fait cette commande scp -P 4242 level02@10.14.200.6:~/level02.pcap ~/sgoinfre/snowcrash puis on a analyser avec Wireshark ou on a remarque la chaine de caracteres password, 
+on a analyser le flux et ca nous a donne ca:
+..%
+..%
+..&..... ..#..'..$
+..&..... ..#..'..$
+.. .....#.....'.........
+.. .38400,38400....#.SodaCan:0....'..DISPLAY.SodaCan:0......xterm..
+........"........!
+........"..".....b........b....	B.
+..............................1.......!
+.."....
+.."....
+..!..........."
+........"
+..".............	..
+.....................
+Linux 2.6.38-8-generic-pae (::ffff:10.1.1.2) (pts/10)
+
+..wwwbugs login: 
+l
+.l
+e
+.e
+v
+.v
+e
+.e
+l
+.l
+X
+.X
+
+
+..
+Password: 
+ft_wandr...NDRel.L0L
+
+.
+..
+Login incorrect
+wwwbugs login: 
+
+
+ici on voit clairement le mdp et wireshark indique les backspace comme des points donc le mdp c'est ft_waNDReL0L

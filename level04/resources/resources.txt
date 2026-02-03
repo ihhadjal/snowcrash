@@ -1,0 +1,4 @@
+etape 1 : Nous avons remarquer un fichier pearl ce fichier comporte une config web qui ecoute sur le port 4747 
+
+etape 2 : on a remarque que l'url ecoute une parametere qui porte le nom x et qui appelle une commande echo comme sur lexo 
+          precedent on a executer le getflag grace a (curl "http://localhost:4747/?x=%3Bgetflag") car le print `echo $y 2>&1` et non protege

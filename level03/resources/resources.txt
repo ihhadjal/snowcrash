@@ -1,0 +1,15 @@
+etape 1: nous avons remarque un binaire a la racine du level03
+
+etape 2: nous avons utilise scp pour recuperer le binaire
+
+etape 3: nous avons decompile le binaire grace a https://dogbolt.org et nous avons remarque que le binaire fait un call pour echo "exploit me" (iVar1 = system("/usr/bin/env echo Exploit me");)
+
+etape 4: nous avons donc conclu que le echo etait la source de la faille
+
+etape 5: nous avons change le fonctionnement de la commande echo grace a cette commande (echo "/bin/sh -c 'getflag'" > /tmp/echo)
+
+etape 6: nous avons change le env pour que le path apelle tmp en premier  (export PATH=/tmp:$PATH)
+
+etape 7: nous avons change les permissions du faux echo pour qu'il puisse executer getflag
+
+etape 8: exections du binaire qui nous a donne le flag pour le prochain exo
