@@ -1,0 +1,9 @@
+etape 1: nous avons remarque que la racine contient deux fichiers, un binaire et un fichier token containant un "token"
+
+etape 2: en testant le binaire de cette facon ./level09 aaa ca nous a rendu ca=> abc, on a donc remarque que level09 s'occupait de faire un "cryptage par index" en rajoutant a chaque lettre son index
+
+etape 3: on a donc conclu que pour decrypter le token il fallait juste decaler chaque lettre par son index, pour ne pas faire ca a la main nous avons fait un script python
+
+etape 4: on a lance le scrypt (python script.py `cat token`) et ca nous a donne le flag
+
+etape 5: on a insere le flag et on a reussi l'exo
