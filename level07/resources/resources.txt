@@ -1,7 +1,0 @@
-etape 1: nous avons decompile le binaire que on a trouve a la racine
-
-etape 2: le binaire recupere le LOGNAME dans le env pour ensuite l'afficher
-
-etape 3: remplacer le logname par ";getflag" => export LOGNAME=";getflag"
-
-etape 4: reexecuter le bianire et boom nous avons le flag
