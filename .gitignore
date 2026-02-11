@@ -1,2 +1,27 @@
-./mon_systeme.qcow2
-./SnowCrash.iso
+# Fichiers volumineux (images disque et ISO)
+mon_systeme.qcow2
+SnowCrash.iso
+
+# Fichiers système
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Environnements virtuels
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
